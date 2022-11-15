@@ -8,6 +8,7 @@ const CarSchema = new Schema(
     brand: { type: String, require: true },
     model: { type: String, require: true},
     color: { type: String, require: true },
+    energy_type: { type: String, require: true },
   },
   { timestamps: true }
 );
