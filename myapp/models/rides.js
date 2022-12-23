@@ -3,9 +3,10 @@ const Schema = mongoose.Schema;
 
 const RideSchema = new Schema(
   {
+    carId: {type: Schema.Types.ObjectId, ref: "Car"},
     Destination: { type: String, require: true },
     Departure_Location: { type: String, require: true},
-    Departure_Date: { type: Date, require: true },
+    Departure_Date: { type: String, require: true },
     Departure_Time: { type: String, require: true },
     Ride_Fees: { type: Number, require: true },
   },
